@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme The Band</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #111;
+  }
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+      
+     height: 60%;
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }
+  #googleMap {
+      width: 100%;
+      height: 400px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }  
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"><img src="https://upload.wikimedia.org/wikipedia/en/c/ce/Oishi_logo.png" height="100px" width="130px"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">HOME</a></li>
+        <li><a href="#band">RECIPES</a></li>
+        <li><a href="#tour">SPECIALS</a></li>
+        <li><a href="#contact">GALLERY</a></li>
+        <li><a href="#contact">VIDEOS</a></li>
+        <li class="dropdown">
+
+
+
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Updates</a></li>
+            <li><a href="#">Media</a></li>
+           
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://1.bp.blogspot.com/-wUNxg_8CAbc/WD-RxkK1ztI/AAAAAAAAB08/vYrWEUWA6y09G7HasiMJv4c4mOTqEJJqgCLcB/s1600/Chicken%2BLollipop%2BRecipe.JPG" alt="Chicken Lollipop" width="100" height="50">
+        <div class="carousel-caption">
+          <h3>Chicken Lollipop</h3>
+          <p>Chicken lollipop is an hors d'oeuvre popular in Indian Chinese cuisine</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="http://www.mustgaze.com/wp-content/uploads/2016/10/Masala-Fried-Pomfret-Recipe.jpg" alt="Fried Fish" width="900" height="700">
+        <div class="carousel-caption">
+          <h3>Masala Fried Pomfret</h3>
+          <p>Crisp fried pomfret marinated in a melange of spices</p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="http://www.dinner4tonight.com/img/honey-and-garlic-king-prawn-stir-fry.jpg" alt="prawns-stir-fry" width="800" height="600">
+        <div class="carousel-caption">
+          <h3>prawn-stir-fry</h3>
+          <p>Stir Fried Prawn is a speciality of the city of Nagoya.</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+  <h3>Oishi Food</h3>
+  <p><em>If you don’t lick your fingers, enjoy only half</em></p>
+  <p>
+Restaurant websites are a great place to find inspiring designs and also to check out some nice ways of displaying photographs within a design. Since the main content of a restaurant is their food – or at least it should be – there is no better thing to do than show beautiful images of the food.Oishi.com provides easy and delicious recipes that are sourced from experts, bloggers and home cooks.</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Egg Roast</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="https://i.ytimg.com/vi/EQNhtyvqShA/maxresdefault.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo" class="collapse">
+        <p>A dish native to Kerala</p>
+        <p> Accompaniment mainly with appam and puttu</p>
+      
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Mediterranean Salmon</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="http://cdn-image.myrecipes.com/sites/default/files/styles/4_3_horizontal_-_1200x900/public/image/recipes/sl/07/02/salmon-beans-sl-1578369-x.jpg?itok=nciHJHIZ" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>Fish of the Adriatic Sea</p>
+        <p>Fish of the Sea of Azov</p>
+        <p>Fish of the Black Sea</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Sea Food Pizza</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="http://cheesebowl.menu/wp-content/uploads/2016/11/47_shutterstock_230909884.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo3" class="collapse">
+        <p>Frutti di Mare </p>
+        <p>Pizza Pescatore</p>
+        <p>Barleycorn Pizza</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+  
+  <div>
+ 
+    
+<div class="bg-1"><br>
+    <center> 
+<h2>Order Now</h2>
+</center>
+     <div class="container">
+
+    <center><label><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required></center></br>
+    
+        <center><label><b>Address</b></label>
+    <input type="text" placeholder="Enter Address" name="address" required></center></br>
+    
+        <center><label><b>Contact</b></label>
+    <input type="tel" placeholder="Enter Moblie No" name="mobile_no" required></center></br>
+    
+        <center><label><b>Dish Name </b></label>
+    <input type="email" placeholder="Enter Email" name="email" required></center></br>
+    
+       <center><label><b>Date</b></label>
+    <input type="date" placeholder="Date" name="date" required></center></br>
+
+    <center><div class="sub" > 
+    <input type="submit" name="submit" value="submit"/></center>
+    </div>
+  </div>
+  </div>
+  
+
+
+
+
+
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
+              <input type="number" class="form-control" id="psw" placeholder="How many?">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+              <button type="submit" class="btn btn-block">Pay 
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Need <a href="#">help?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>Words of inspiration from food lovers</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Send Your Feedback</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Oishi Canyin, Varanasi</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +9473634348</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: oishicanyin@gmail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  
+   
+
+<div class="bg-1">
+
+<style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 100px;
+          
+    }
+
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 30%;
+
+    }
+    
+    /* Set black background color, white text and some padding */
+    .container {
+      padding: 80px 120px;
+  }
+   
+  </style>
+</head>
+<body>
+  <br>
+  <h2>Create Your Own Cookbook</h2>
+  Download Oishi Bawarchi App <br>
+  <a href="#link"><img src="http://amyvee.com/wp-content/uploads/2010/01/Android-app-on-Google-play-logo-vector-2.png" height="100px" width="130px"></a>
+   <a href="#link2"><img src="https://www.legolandholidays.co.uk/images/legoland/park/promo/app-store-logo.jpg" height="100px" width="130px"></a>
+<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage"><font color="red">HOME</font></a></li>
+        <li><a href="#band"><font color="red">RECIPES</font></a></li>
+        <li><a href="#tour"><font color="red">SPECIALS</font></a></li>
+        <li><a href="#contact"><font color="red">GALLERY</font></a></li>
+        <li><a href="#contact"><font color="red">VIDEOS</font></a></li>
+      
+
+  </ul>
+</div>
+</div>
+</body>
+</div>
+</div>
+</center>
+
+      
+     
+     
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
