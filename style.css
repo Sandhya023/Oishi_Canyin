@@ -1,0 +1,57 @@
+body
+{
+	background-image:url(imageb1. jpg); 
+}
+
+.cover-head {
+    font-family: cursive;
+    letter-spacing: 1px;
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #000000;
+    text-shadow: 2px 2px  #B22222;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 6px;
+    padding: 8px;
+}
+
+div.polaroid {
+ float: left;
+  width: 45%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+  
+}
+
+a
+{
+
+	color:#000000;
+	font-family: cursive;
+	font-weight: 1000;
+	font-size: 27px;
+}
+
+a:link
+{
+	text-decoration: none;
+}
+
+a:visited
+ {
+    text-decoration: none;
+}
+a:hover
+{
+	color: red;
+}
+
